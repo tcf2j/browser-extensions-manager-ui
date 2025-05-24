@@ -1,0 +1,159 @@
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans);
+
+body{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
+.header{
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    font-size: 500;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.light-mode{
+    background-color: hsl(225, 23%, 24%);
+    height: 20px;
+    width: 30px;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 8px;
+}
+
+.subheading{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.activity-buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 8px;
+}
+
+.activity-buttons button{
+    background-color:hsl(226, 25%, 17%);
+    color: white;
+    border-radius: 20px;
+    border: solid 1px hsl(225, 23%, 24%);
+    height: 40px;
+    width: 60px;
+}
+
+.list-of-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+.item{
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    border-radius: 8px;
+    border: solid 1px hsl(226, 11%, 37%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 170px;
+    width: 500px;
+}
+
+.item-body{
+    display: flex;
+    gap: 20px;
+}
+
+.item-body img{
+    margin-bottom: 60px;
+}
+
+
+.item-info p{
+    color: hsl(0, 0%, 78%);
+}
+
+.item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-footer button{
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    border-radius: 18px;
+    border: solid 1px hsl(226, 11%, 37%);
+    padding: 8px;
+}
+
+.toggle {
+    position: relative;
+}
+
+.toggle input{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+    display:block;
+    cursor: pointer;
+    background-color: #091540;
+    transition: 0.4s;
+    width: 40px;
+    height: 23px;
+}
+
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue;
+    transition: 0.4s;
+    top: 1px;
+}
+
+input:checked + .slider{
+    background-color: hsl(3, 71%, 56%);
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+
+.slider.round{
+    border-radius: 60px;
+}
+
+.slider.round::before{
+    border-radius: 60px;
+}
+
+
+

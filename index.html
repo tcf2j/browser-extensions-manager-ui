@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  
+</head>
+<body>
+  <div class="header">
+    <p>Extensions</p>
+    <input class="light-mode" type="image" src="./assets/images/icon-sun.svg" style="width:16px;">
+  </div>
+  <div class="subheading">
+    <h2>Extensions List</h2>
+    <div class="activity-buttons">
+      <button id="all-button">All</button>
+      <button class="active-button">Active</button>
+      <button class="inactive-button">Inactive</button>
+    </div>
+  </div>
+  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+  <div class="list-of-items">
+    <div class="row">
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-devlens.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>DevLens</h3>
+            <p>Quickly inspect page layouts and visualize element boundaries.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-style-spy.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>StyleSpy</h3>
+            <p>Instantly analyze and copy CSS from any webpage element.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-speed-boost.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>SpeedBoost</h3>
+            <p>Optimizes browser resource usage to accelerate page loading.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-json-wizard.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>JSONWizard</h3>
+            <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-tab-master-pro.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>TabMaster Pro</h3>
+            <p>Organizes browser tabs into groups and sessions.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-viewport-buddy.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>ViewportBuddy</h3>
+            <p>Simulates various screen resolutions directly within the browser.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-markup-notes.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>Markup Notes</h3>
+            <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-grid-guides.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>GridGuides</h3>
+            <p>Overlay customizable grids and alignment guides on any webpage.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-palette-picker.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>Palette Picker</h3>
+            <p>Instantly extracts color palettes from any webpage.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-link-checker.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>LinkChecker</h3>
+            <p>Scans and highlights broken links on any page.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-dom-snapshot.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>DOM Snapshot</h3>
+            <p>Capture and export DOM structures quickly.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-body">
+          <img src="./assets/images/logo-console-plus.svg" style="width: 40px;"/>
+          <div class="item-info">
+            <h3>ConsolePlus</h3>
+            <p>Enhanced developer console with advanced filtering and logging.</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <button>Remove</button>
+          <label class="toggle">
+            <span class="onoff"></span>
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+  
+</body>
+<script src="script.js"></script>
+</html>
